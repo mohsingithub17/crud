@@ -1,0 +1,11 @@
+{{mx}}
+<table align="center" border="1px">
+    {% for i in data%}
+    <tr>
+        <td>{{i.ename}}</td>
+        <td>{{i.sal}}</td>
+        <td>{{i.address}}</td>
+        <td><img src="{{i.img.url}}" /></td>
+    </tr>
+    {% endfor %}
+</table>

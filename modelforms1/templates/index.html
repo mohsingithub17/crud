@@ -1,0 +1,10 @@
+<h1>index page is running</h1>
+{{mx}} {{mn}} {{ag}} {{sm}}
+<form action="addimage" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    Ename {{e.ename}}<br>
+    Sal {{e.sal}}<br>
+    Address {{e.address}}<br>
+    Image {{e.img}}<br>
+    <button>Add image</button>
+</form>

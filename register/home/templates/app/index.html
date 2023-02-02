@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	{% comment %} <link rel="stylesheets" href="{%static'css/test.html'%}"> {% endcomment %}
+</head>
+<body img src="E:\inputtag.html\image\back.jpg">
+	<center>
+		<h1> REGISTRATION FORM</h1>
+		<form class="fm", action="/", method='post'>
+			{% csrf_token %}
+			<table>
+				<tr>
+					<td id="un">NAME</td>
+					<td><input type="text" name="name" placeholder="enter name"></td>
+				</tr>
+			
+				<tr>
+					<td id="en">EMAIL</td>
+					<td><input type="text" name="email"></td>
+
+				</tr>
+				<tr>
+					<td id="ad">address</td>
+					<td><input type="text" name="address"></td>
+				</tr>
+				<tr>
+					<td id="pn">pnumber</td>
+					<td><input type="text" name="number"></td>
+				</tr>
+				<tr>
+					<td id="pw">password</td>
+					<td><input type="password" name="pwd"></td>
+				</tr>
+				
+			
+				<tr>
+					<td colspan="2" align="center">
+						<button type="submit">sign up<button>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<button><a href="/signin">LOGIN</a></button>
+	</center>
+
+</body>
+</html>

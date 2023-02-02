@@ -1,0 +1,20 @@
+
+<table border="1px">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Mobile Phone</th>
+    </tr>
+{%for i in data%}
+    <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.Email}}</td>
+        <td>{{i.address}}</td>
+        <td>{{i.number}}</td>
+        <td><button type="submit"><a href="/update/{{i.id}}/">update</a></button></td>
+        <td><button type=''><a href="/delete?id={{i.id}}">delete</a></button></td>
+        
+    </tr>
+{%endfor%}
+</table>

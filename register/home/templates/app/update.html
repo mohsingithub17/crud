@@ -1,0 +1,72 @@
+{%block content %}
+
+    <div class="regform"><h1> Update form</h1> </div>
+    <div class="main">
+        <form action="/updatedata" method="POST" >
+            {% csrf_token %}
+            <input type="hidden" name="uid" value="{{person.id}}"/>
+
+            <div id="name">
+                <h2 class="name">Name</h2>
+                <input class="firstname" type="text" name="name" value="{{person.name}}"><br>
+            <label class="firstlable">name</label>
+            <div>
+         
+         <!-- <input type="hidden" name="uid" value="{{person.id}}"> -->
+               
+
+                
+                <h2 class="name">Email</h2>
+                <input class="Email" type="text" name="email" value="{{person.Email}}"><br>
+                <h2 class="address">address</h2>
+                <input class="address" type="text" name="address" value="{{person.address}}">
+                
+                <h2 class="name"> number</h2>
+                
+                <input class="number" type="text"  name="Phone" value="{{person.number}}">
+                <label class="number" ></label><br>
+
+
+                    <button type="submit">Save</button>
+                </div>
+                      </div>
+                 </form>
+          </div>
+                    </body>
+                </html>
+                
+                {% endblock %}
+        
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<center><h1 style="color:white; background-color:blue;">welcome</h1></center>
+	 <table align="cender" border="1px">
+        
+	 	<tr>
+		<form action="/update" method="POST">
+            {% csrf_token %}
+			
+			<td><input type="hidden" name="id" value="{{person.id}}" /></td>
+			<td><input type="text" name="name" value="{{person.name}}" /></td>
+			<td><input type="email" name="email" value="{{person.email}}" /></td>
+			<td><input type="number" name="number" value="{{person.mob}}" /></td>
+			<td><input type="text" name="add" value="{{person.address}}" /></td>
+			
+			<td><button type='submit'>UPDATE</button></td>
+
+		</form>
+		<td><a href="/deleteemp?eid={{i.id}}">DELETE</a></td>
+	    </tr>
+
+    </table>
+
+</body>
+</html> -->
